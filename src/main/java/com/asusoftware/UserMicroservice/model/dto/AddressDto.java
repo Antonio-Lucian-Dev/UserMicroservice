@@ -20,10 +20,6 @@ public class AddressDto {
     private String country;
     @NotNull
     private int zipCode;
-    @Nullable
-    private String street;
-    @Nullable
-    private int streetNumber;
 
     public static Address toEntity(AddressDto addressDto) {
         Address address = new Address();
@@ -34,8 +30,10 @@ public class AddressDto {
 
     public static AddressDto toDto(Address address) {
         AddressDto addressDto = new AddressDto();
+        addressDto.setId(address.getId());
         addressDto.setCity(address.getCity());
         addressDto.setCountry(address.getCountry());
+        addressDto.setZipCode(address.getZipCode());
         return addressDto;
     }
 
