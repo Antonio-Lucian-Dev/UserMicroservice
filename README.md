@@ -13,3 +13,4 @@
 - Spring Security
 
 # Diagram image
+![alt text](https://github.com/Antonio-Lucian-Dev/UserMicroservice/blob/main/src/main/resources/db/user-microservice-db-schema.png?raw=true)
